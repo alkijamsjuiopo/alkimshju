@@ -1,0 +1,9 @@
+build:
+  box: ubuntu
+  no-response-timeout: 60
+  command-timeout: 60
+  docker: true
+  steps: 
+    - internal/docker-build:
+      dockerfile: Dockerfile
+      image-name: my-new-image
